@@ -28,3 +28,5 @@ int main(){
 
     cout<<(d-c);
 }
+
+//ssh-keygen -t rsa -b 4096 -C "muhaiminverse@gmail.com"
