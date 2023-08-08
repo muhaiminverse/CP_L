@@ -13,7 +13,6 @@ bool check_pal(string a){
             break;
         }
     }
-   
    return track;
     
 
@@ -23,8 +22,8 @@ string check_set(string a){
 
     for (int i = 0; i <= n; i++)
     {
-        string first_half = a.substr(0, i);
-        string second_half = a.substr(i, n- i);
+        string first_half = a.substr(0, i); 
+        string second_half = a.substr(i, n- i); 
 
         for (char j = 'a'; j <= 'z'; j++)
         {

@@ -20,8 +20,11 @@ int main()
         if(f == 0)  c++;
         f = 0;
     }
-
-    cout<<endl<<c;
+    
+    if(c & 1 )
+        cout<<"IGNORE HIM!";
+    else
+        cout<<"CHAT WITH HER!";
     
 
     return 0;
