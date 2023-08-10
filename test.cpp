@@ -1,28 +1,15 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-int main()
-{
-    string s;
-    cin>>s;
-    
-    int c = 0 , f = 0;
-    
-    for (int i = 0; s[i] != '\0'; i++)
-    {
-        for (int j = i - 1; j>=0; j--)
-        {
-            if(s[i] == s[j]){
-                f = 1;
-                break;
-            }
-        }
-        
-        if(f == 0)  c++;
-        f = 0;
-    }
 
-    cout<<endl<<c;
-    
+int main() {
+    string original = "1+3+4+5+9+7";
+    string sorted = original; // Create a copy
+
+    sort(sorted.begin(), sorted.end());
+
+    cout << "Original string: " << original << endl;
+    cout << "Sorted string: " << sorted << endl;
 
     return 0;
 }
